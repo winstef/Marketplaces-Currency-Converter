@@ -139,8 +139,8 @@ function appendLocalCurrency() {
 		}
 	}); 
 
-	var currencySection = $('<div class="box--topbar"><h2 style="margin-top:82px;">Local Currency : '+currencyName+'</h2></div>' +
-								      '<div class="box--hard-top new-typography">' +								      
+	var currencySection = $('<div class="box--topbar" style="margin-top:82px;"><h2>Local Currency : '+currencyName+'</h2></div>' +
+								      '<div class="box--hard-top new-typography" style="font-size: 1.5em;">' +								      
 								      '$1 = ' + (parseInt(currencyRate*100, 10)/100).toFixed(2) +' '+ currencyName.toLowerCase() +'</div>');
 
 	$(".sidebar-right").prepend(currencySection);
